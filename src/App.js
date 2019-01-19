@@ -1,15 +1,12 @@
 import React, { Component } from 'react';
-import Header from './components/Header.js';
-import CatDisplay from './components/CatDisplay';
+import ChangableCatDisplay from './components/ChangableCatDisplay';
+
 
 
 class App extends Component {
   render() {
     return (
-      <>
-        <Header/>
-        <CatDisplay/>
-      </>
+      <ChangableCatDisplay/>
     );
   }
 }
