@@ -6,7 +6,7 @@ export class Header extends Component {
     return (
       <header>
         <h1>Cats.</h1>
-        <CatsChangerButton/>
+        <CatsChangerButton displayRandomImage={this.props.displayRandomImage}/>
       </header>
     )
   }
