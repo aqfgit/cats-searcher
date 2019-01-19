@@ -1,11 +1,13 @@
 import React, { Component } from 'react'
+import CatsChangerButton from './CatsChangerButton';
 
 export class Header extends Component {
   render() {
     return (
-      <div>
-        
-      </div>
+      <header>
+        <h1>Cats.</h1>
+        <CatsChangerButton/>
+      </header>
     )
   }
 }

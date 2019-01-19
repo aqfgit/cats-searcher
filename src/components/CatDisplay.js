@@ -1,11 +1,12 @@
 import React, { Component } from 'react'
+import CatImage from './CatImage';
 
 export class CatDisplay extends Component {
   render() {
     return (
-      <div>
-        
-      </div>
+      <main>
+        <CatImage/>
+      </main>
     )
   }
 }
