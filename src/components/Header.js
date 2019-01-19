@@ -1,11 +1,13 @@
 import React, { Component } from 'react'
 import CatsChangerButton from './CatsChangerButton';
+import styled from 'styled-components';
+import PageTitle from './PageTitle';
 
 export class Header extends Component {
   render() {
     return (
       <header>
-        <h1>Cats.</h1>
+        <PageTitle/>
         <CatsChangerButton displayRandomImage={this.props.displayRandomImage}/>
       </header>
     )
