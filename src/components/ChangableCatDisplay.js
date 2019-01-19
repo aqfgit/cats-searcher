@@ -1,6 +1,14 @@
 import React, { Component } from 'react'
 import CatDisplay from './CatDisplay';
 import Header from './Header';
+import { createGlobalStyle } from 'styled-components'
+
+const BodyReset = createGlobalStyle`
+  body {
+    padding: 0px;
+    margin: 0px;
+  }
+`
 
 export class ChangableCatDisplay extends Component {
   constructor(props) {
@@ -58,6 +66,7 @@ export class ChangableCatDisplay extends Component {
   render() {
     return (
       <>
+      <BodyReset/>
       <Header displayRandomImage={this.displayRandomImage.bind(this)}/>
       <CatDisplay imageUrl={this.state.imageUrl} description={this.state.description} isLoading={this.state.isLoading}/>
       </>
