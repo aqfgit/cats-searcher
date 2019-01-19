@@ -8,15 +8,18 @@ export class ChangableCatDisplay extends Component {
     this.state = {
       imageUrl: '',
       description: '',
+      isLoading: false
     };
   }
 
   displayRandomImage(event) {
+    this.setState({ isLoading: true });
     this.getRandomImage()
       .then(data => {
         this.setState({
           imageUrl: data.imageUrl,
           description: data.description,
+          isLoading: false
         });
       })
       .catch(error => console.log(error))
@@ -56,7 +59,7 @@ export class ChangableCatDisplay extends Component {
     return (
       <>
       <Header displayRandomImage={this.displayRandomImage.bind(this)}/>
-      <CatDisplay imageUrl={this.state.imageUrl} description={this.state.description}/>
+      <CatDisplay imageUrl={this.state.imageUrl} description={this.state.description} isLoading={this.state.isLoading}/>
       </>
     )
   }
