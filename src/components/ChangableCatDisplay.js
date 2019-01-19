@@ -18,6 +18,8 @@ export class ChangableCatDisplay extends Component {
       description: '',
       isLoading: false
     };
+
+    this.displayRandomImage();
   }
 
   displayRandomImage(event) {
