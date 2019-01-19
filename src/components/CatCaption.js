@@ -3,7 +3,9 @@ import React, { Component } from 'react'
 export class CatCaption extends Component {
   render() {
     return (
-      <figcaption></figcaption>
+      <figcaption>
+        {this.props.description}
+      </figcaption>
     )
   }
 }

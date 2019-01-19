@@ -5,8 +5,8 @@ export class CatImage extends Component {
   render() {
     return (
       <figure>
-        <img src="" alt=""/>
-        <CatCaption/>
+        <img src={this.props.imageUrl} alt=""/>
+        <CatCaption description={this.props.description}/>
       </figure>
     )
   }

@@ -56,7 +56,7 @@ export class ChangableCatDisplay extends Component {
     return (
       <>
       <Header displayRandomImage={this.displayRandomImage.bind(this)}/>
-      <CatDisplay/>
+      <CatDisplay imageUrl={this.state.imageUrl} description={this.state.description}/>
       </>
     )
   }

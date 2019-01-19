@@ -5,7 +5,7 @@ export class CatDisplay extends Component {
   render() {
     return (
       <main>
-        <CatImage/>
+        <CatImage imageUrl={this.props.imageUrl} description={this.props.description}/>
       </main>
     )
   }
